@@ -102,3 +102,27 @@ venv.bak/
 
 # mypy
 .mypy_cache/
+
+\.idea/
+
+body_models/dmpls/female/model\.npz
+
+body_models/dmpls/male/model\.npz
+
+body_models/dmpls/neutral/model\.npz
+
+body_models/dmpls/LICENSE\.txt
+
+body_models/smplh/female/model\.npz
+
+body_models/smplh/male/model\.npz
+
+body_models/smplh/neutral/model\.npz
+
+body_models/smplh/info\.txt
+
+body_models/smplh/LICENSE\.txt
+
+body_models/dmpls\.tar\.xz
+
+body_models/smplh\.tar\.xz
