@@ -1,0 +1,62 @@
+License
+Dataset Copyright License for non-commercial scientific research purposes
+
+Please read carefully the following terms and conditions and any accompanying documentation before you download and/or use the AMASS Dataset and the accompanying materials (jointly referred to as the "Dataset"). By downloading and/or using the Dataset, you acknowledge that you have read these terms and conditions, understand them, and agree to be bound by them. If you do not agree with these terms and conditions, you must not download and/or use the Dataset. Any infringement of the terms of this agreement will automatically terminate your rights under this License.
+
+Ownership / Licensees
+The Dataset and the associated materials has been developed at the 
+
+Max Planck Institute for Intelligent Systems (hereinafter "MPI") and the Max Planck Institute for Biological Cybernetics (hereinafter “KYB”).
+
+Any copyright or patent right is owned by and proprietary material of the
+
+Max-Planck-Gesellschaft zur Förderung der Wissenschaften e.V. (hereinafter “MPG”; MPI and MPG hereinafter collectively “Max-Planck”)
+
+hereinafter the “Licensor”.
+
+License Grant
+Licensor grants you (Licensee) personally a single-user, non-exclusive, non-transferable, free of charge right:
+
+To obtain and install the Dataset on computers owned, leased or otherwise controlled by you and/or your organization;
+To use the Dataset for the sole purpose of performing non-commercial scientific research, non-commercial education, or non-commercial artistic projects;
+To modify, adapt, translate or create derivative works based upon the Dataset.
+Any other use, in particular any use for commercial purposes, is prohibited. This includes, without limitation, incorporation in a commercial product, use in a commercial service, or production of other artefacts for commercial purposes. The Dataset may not be reproduced, modified and/or made available in any form to any third party without Max-Planck’s prior written permission. 
+
+The Dataset may not be used for pornographic purposes or to generate pornographic material whether commercial or not. This license also prohibits the use of the Dataset to train methods/algorithms/neural networks/etc. for commercial use of any kind. By downloading the Dataset, you agree not to reverse engineer it.
+
+No Distribution
+The Dataset and the license herein granted shall not be copied, shared, distributed, re-sold, offered for re-sale, transferred or sub-licensed in whole or in part except that you may make one copy for archive purposes only.
+
+Disclaimer of Representations and Warranties
+You expressly acknowledge and agree that the Dataset results from basic research, is provided “AS IS”, may contain errors, and that any use of the Dataset is at your sole risk. LICENSOR MAKES NO REPRESENTATIONS OR WARRANTIES OF ANY KIND CONCERNING THE SOFTWARE, NEITHER EXPRESS NOR IMPLIED, AND THE ABSENCE OF ANY LEGAL OR ACTUAL DEFECTS, WHETHER DISCOVERABLE OR NOT. Specifically, and not to limit the foregoing, licensor makes no representations or warranties (i) regarding the merchantability or fitness for a particular purpose of the Dataset, (ii) that the use of the Dataset will not infringe any patents, copyrights or other intellectual property rights of a third party, and (iii) that the use of the Dataset will not cause any damage of any kind to you or a third party.
+
+Limitation of Liability
+Because this Software License Agreement qualifies as a donation, according to Section 521 of the German Civil Code (Bürgerliches Gesetzbuch – BGB) Licensor as a donor is liable for intent and gross negligence only. If the Licensor fraudulently conceals a legal or material defect, they are obliged to compensate the Licensee for the resulting damage.
+Licensor shall be liable for loss of data only up to the amount of typical recovery costs which would have arisen had proper and regular data backup measures been taken. For the avoidance of doubt Licensor shall be liable in accordance with the German Product Liability Act in the event of product liability. The foregoing applies also to Licensor’s legal representatives or assistants in performance. Any further liability shall be excluded.
+Patent claims generated through the usage of the Dataset cannot be directed towards the copyright holders.
+The contractor points out that add-ons as well as minor modifications to the Dataset may lead to unforeseeable and considerable disruptions.
+
+No Maintenance Services
+You understand and agree that Licensor is under no obligation to provide either maintenance services, update services, notices of latent defects, or corrections of defects with regard to the Dataset. Licensor nevertheless reserves the right to update, modify, or discontinue the Dataset at any time.
+
+Defects of the Dataset must be notified in writing to the Licensor with a comprehensible description of the error symptoms. The notification of the defect should enable the reproduction of the error. The Licensee is encouraged to communicate any use, results, modification or publication.
+
+Publications using the Dataset
+You acknowledge that the Dataset is a valuable scientific resource and agree to appropriately reference the following paper in any publication making use of the Dataset.
+
+Citation:
+
+@inproceedings{AMASS:2019,
+  title={AMASS: Archive of Motion Capture as Surface Shapes},
+  author={Mahmood, Naureen and Ghorbani, Nima and F. Troje, Nikolaus and Pons-Moll, Gerard and Black, Michael J.},
+  booktitle = {The IEEE International Conference on Computer Vision (ICCV)},
+  year={2019},
+  month = {Oct},
+  url = {https://amass.is.tue.mpg.de},
+  month_numeric = {10}
+}
+
+Commercial licensing opportunities
+For commercial uses of the Dataset, please send email to ps-license@tue.mpg.de
+
+This Agreement shall be governed by the laws of the Federal Republic of Germany except for the UN Sales Convention.
