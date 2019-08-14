@@ -34,7 +34,7 @@ Please download each and put them in body_models folder of this repository after
 
 ## Tutorials
 We release tools and multiple Jupyter notebooks to demonstrate how to use AMASS to animate SMPLH body model.
-Please refer to [Tutorials](/notebooks) for further details.
+Please refer to [tutorials](/notebooks) for further details.
 
 ## Citation
 Please cite the following paper if you use this code directly or indirectly in your research/projects:
