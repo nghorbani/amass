@@ -71,6 +71,7 @@ def dump_amass2pytroch(datasets, amass_dir, out_posepath, logger = None, rnd_see
         logger('Creating pytorch dataset at %s' % out_posepath)
 
     data_pose = []
+    data_dmpl = []
     data_betas = []
     data_gender = []
     data_trans = []
@@ -90,6 +91,7 @@ def dump_amass2pytroch(datasets, amass_dir, out_posepath, logger = None, rnd_see
             if len(cdata_ids)<1: continue
 
             data_pose.extend(cdata['poses'][cdata_ids].astype(np.float32))
+            data_dmpl.extend(cdata['dmpls'][cdata_ids].astype(np.float32))
             data_trans.extend(cdata['trans'][cdata_ids].astype(np.float32))
             data_betas.extend(np.repeat(cdata['betas'][np.newaxis].astype(np.float32), repeats=len(cdata_ids), axis=0))
             data_gender.extend([gdr2num[str(cdata['gender'].astype(np.str))] for _ in cdata_ids])
@@ -97,6 +99,7 @@ def dump_amass2pytroch(datasets, amass_dir, out_posepath, logger = None, rnd_see
     assert len(data_pose) != 0
 
     torch.save(torch.tensor(np.asarray(data_pose, np.float32)), out_posepath)
+    torch.save(torch.tensor(np.asarray(data_dmpl, np.float32)), out_posepath.replace('pose.pt', 'dmpl.pt'))
     torch.save(torch.tensor(np.asarray(data_betas, np.float32)), out_posepath.replace('pose.pt', 'betas.pt'))
     torch.save(torch.tensor(np.asarray(data_trans, np.float32)), out_posepath.replace('pose.pt', 'trans.pt'))
     torch.save(torch.tensor(np.asarray(data_gender, np.int32)), out_posepath.replace('pose.pt', 'gender.pt'))
@@ -160,6 +163,7 @@ def prepare_amass(amass_splits, amass_dir, work_dir, logger=None):
     class AMASS_ROW(pytables.IsDescription):
         gender = pytables.Int16Col(1)  # 1-character String
         pose = pytables.Float32Col(52*3)  # float  (single-precision)
+        dmpl = pytables.Float32Col(8)  # float  (single-precision)
         pose_matrot = pytables.Float32Col(52*9)  # float  (single-precision)
         betas = pytables.Float32Col(16)  # float  (single-precision)
         trans = pytables.Float32Col(3)  # float  (single-precision)
