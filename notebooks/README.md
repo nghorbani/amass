@@ -1,7 +1,9 @@
+![alt text](https://amass.is.tue.mpg.de/uploads/ckeditor/pictures/1/teaser.gif "Samples of bodies in AMASS recovered from Motion Capture sequences")
+
 # AMASS Data Processing Tools
 
 Here we provide basic tools to turn compressed numpy arrays that are in *.npz* format holding 
- [SMPLH](http://mano.is.tue.mpg.de/) body parameters obtained from [AMASS](https://amass.is.tue.mpg.de/dataset),
+ [SMPL+H](http://mano.is.tue.mpg.de/) body parameters obtained from [AMASS](https://amass.is.tue.mpg.de/dataset),
 into other suitable formats for deep learning frameworks. The final outcomes are PyTorch readable *.pt* files, as well as *.h5* files
 that are commonly usable in machine learning fields. 
 The provided data preparation code has three stages that could be flexibly modified for your own specific needs.
@@ -63,7 +65,7 @@ mv.render_wireframe = True #
 # AMASS for Training Neural Networks on Human Body Data 
 Similar to [ImageNet](http://www.image-net.org/), AMASS is a large dataset suitable for deep learning purposes. 
 The only difference is that instead of images it holds human body parameters,
-controlling the surface mesh of the [SMPLH body model](http://mano.is.tue.mpg.de/).
+controlling the surface mesh of the [SMPL+H body model](http://mano.is.tue.mpg.de/).
 
 Here we provide basic tools for loading them
 for training a deep neural network that has to do with human body and motion. 
