@@ -126,3 +126,7 @@ body_models/smplh/LICENSE\.txt
 body_models/dmpls\.tar\.xz
 
 body_models/smplh\.tar\.xz
+
+body_models/smplx/
+
+body_models/model_compress\.py
