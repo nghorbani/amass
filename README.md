@@ -50,8 +50,6 @@ Please cite the following paper if you use this code directly or indirectly in y
   month_numeric = {10}
 }
 ```
-Also note that if you consider training using any of the body models, you should also cite corresponding references.
-
 ## License
 
 Software Copyright License for **non-commercial scientific research purposes**.
