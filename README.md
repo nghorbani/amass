@@ -2,12 +2,11 @@
 
 ![alt text](github_data/datasets_preview.png "Samples of bodies in AMASS recovered from Motion Capture sequences")
 
-AMASS is a large database of human motion unifying different optical marker-based motion capture datasets
- by representing them within a common framework and parameterization. 
+AMASS is a large database of human motion unifying different optical marker-based motion capture datasets by representing them within a common framework and parameterization. 
  AMASS is readily useful for animation, visualization, and generating training data for deep learning.
 
-Here we provide a tools and tutorials to use AMASS in your research projects. More specifically:
-- Following the recommended splits of data by AMASS we provide three non-overlapping train/validation/test splits.
+Here we provide tools and tutorials to use AMASS in your research projects. More specifically:
+- Following the recommended splits of data by AMASS, we provide three non-overlapping train/validation/test splits.
 - AMASS uses an extended version of [SMPL+H](http://mano.is.tue.mpg.de/) with [DMPLs](http://smpl.is.tue.mpg.de/downloads). 
 Here we show how to load different components and visualize a body model with AMASS data.
 - AMASS is also compatible with [SMPL](http://smpl.is.tue.mpg.de) and [SMPL-X](https://smpl-x.is.tue.mpg.de/) body models. 
@@ -34,7 +33,7 @@ In the paper originally we use [SMPL+H](http://mano.is.tue.mpg.de/downloads) wit
 Please download each and put them in body_models folder of this repository after you obtained the code from GitHub.
 
 ## Tutorials
-We release tools and multiple jupyter notebooks to demonstrate how to use AMASS to animate SMPLH body model.
+We release tools and multiple Jupyter notebooks to demonstrate how to use AMASS to animate SMPLH body model.
 Please refer to [Tutorials](/notebooks) for further details.
 
 ## Citation
@@ -54,10 +53,9 @@ Please cite the following paper if you use this code directly or indirectly in y
 
 Software Copyright License for **non-commercial scientific research purposes**.
 Please read carefully the [terms and conditions](./LICENSE) 
-and any accompanying documentation before you download and/or
- use the AMASS dataset, and software, (the "Model & Software"). 
+and any accompanying documentation before you download and/or use the AMASS dataset, and software, (the "Model & Software"). 
  By downloading and/or using the Model & Software 
- (including downloading, cloning, installing, and any other use of this github repository), 
+ (including downloading, cloning, installing, and any other use of this GitHub repository), 
  you acknowledge that you have read these terms and conditions, understand them, 
  and agree to be bound by them. If you do not agree with these terms and conditions, 
  you must not download and/or use the Model & Software.
