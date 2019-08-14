@@ -1,8 +1,7 @@
-#AMASS: Archive of Motion Capture as Surface Shapes
+# AMASS: Archive of Motion Capture as Surface Shapes
 
 ![alt text](github_data/datasets_preview.png "Samples of bodies in AMASS recovered from Motion Capture sequences")
 
-## Description
 AMASS is a large database of human motion unifying different optical marker-based motion capture datasets
  by representing them within a common framework and parameterization. 
  AMASS is readily useful for animation, visualization, and generating training data for deep learning.
@@ -10,11 +9,10 @@ AMASS is a large database of human motion unifying different optical marker-base
 Here we provide a tools and tutorials to use AMASS in your research projects. More specifically:
 - Following the recommended splits of data by AMASS we provide three non-overlapping train/validation/test splits.
 - AMASS uses an extended version of [SMPL+H](http://mano.is.tue.mpg.de/) with [DMPLs](http://smpl.is.tue.mpg.de/downloads). 
-Here we show how load different components and visualize a body with AMASS data.
+Here we show how to load different components and visualize a body model with AMASS data.
 - AMASS is also compatible with [SMPL](http://smpl.is.tue.mpg.de) and [SMPL-X](https://smpl-x.is.tue.mpg.de/) body models. 
-We show how to use body data from AMASS to animate these models.
+We show how to use the body data from AMASS to animate these models.
 ## Table of Contents
-  * [Description](#description)
   * [Installation](#installation)
   * [Body Models](#body-models)
   * [Tutorials](#tutorials)
@@ -24,21 +22,20 @@ We show how to use body data from AMASS to animate these models.
 
 ## Installation
 
-**Install using pip:**
 Install from this repository for the latest developments:
 ```bash
 pip install git+https://github.com/nghorbani/amass
 ```
 
 ## Body Models
-AMASS fits an statistical body model to labeled marker-based optical motion capture data.
-In the papaer originally we use [SMPL+H](http://mano.is.tue.mpg.de/downloads) with extended shape space, e.g. 16 betas, and 
+AMASS fits a statistical body model to labeled marker-based optical motion capture data.
+In the paper originally we use [SMPL+H](http://mano.is.tue.mpg.de/downloads) with extended shape space, e.g. 16 betas, and 
 [DMPLs](http://smpl.is.tue.mpg.de/downloads). 
 Please download each and put them in body_models folder of this repository after you obtained the code from GitHub.
 
 ## Tutorials
 We release tools and multiple jupyter notebooks to demonstrate how to use AMASS to animate SMPLH body model.
-Please refer to [Tutorials](../notebooks) for further details.
+Please refer to [Tutorials](/notebooks) for further details.
 
 ## Citation
 Please cite the following paper if you use this code directly or indirectly in your research/projects:
