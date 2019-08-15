@@ -34,6 +34,8 @@ Please download each and put them in body_models folder of this repository after
 
 ## Tutorials
 We release tools and multiple Jupyter notebooks to demonstrate how to use AMASS to animate SMPLH body model.
+Furthermore, as promised in the supplementary material of the paper we release code to produce synthetic mocap using 
+[DFaust](http://dfaust.is.tue.mpg.de) registrations.
 Please refer to [tutorials](/notebooks) for further details.
 
 ## Citation

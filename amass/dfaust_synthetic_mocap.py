@@ -106,8 +106,7 @@ def registration2markers(registration_dir, out_marker_dir):
     genders = {'50002': 'male', '50004': 'female', '50007': 'male', '50009': 'male', '50020': 'female',
                '50021': 'female', '50022': 'female', '50025': 'female', '50026': 'male', '50027': 'male'}
 
-
-    with open('/is/ps2/nghorbani/code-repos/frankengeist/experiments/nima/project_amass/moshpp_onetimestuff/dfaust/ssm_all_marker_placements.json') as f:
+    with open('./ssm_all_marker_placements.json') as f:
         all_marker_placements = json.load(f)
     all_mrks_keys = list(all_marker_placements.keys())
 
@@ -141,7 +140,7 @@ def registration2markers(registration_dir, out_marker_dir):
 
 
 if __name__ == '__main__':
-    registration_dir = '/ps/project/amass/ScanData/dfaust/registrations'
-    out_marker_dir = '/home/nghorbani/Downloads/mocap_pkls'
+    registration_dir = 'PATH_TO_DFAUT/REGISTRATION_PKLS' # download from http://dfaust.is.tue.mpg.de/downloads
+    out_marker_dir = 'OUTPUT_FOR_SYNTHETIC_MOCAP/*.npz'
     registration2markers(registration_dir, out_marker_dir)
 
