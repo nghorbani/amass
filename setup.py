@@ -36,7 +36,7 @@ setup(name='amass',
       description='AMASS: Archive of Motion Capture as Surface Shapes',
       long_description=open("README.md").read(),
       long_description_content_type="text/markdown",
-      install_requires=['torch==1.1.0', 'configer', 'human_body_prior',  'trimesh', 'pyrender', 'numpy'],
+      install_requires=['torch==1.1.0', 'human_body_prior',  'trimesh', 'pyrender', 'numpy'],
       dependency_links=[
           "https://github.com/nghorbani/configer/tarball/master#egg=configer"
           "https://github.com/nghorbani/human_body_prior/tarball/master#egg=human_body_prior"
