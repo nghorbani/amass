@@ -20,6 +20,10 @@ We show how to use the body data from AMASS to animate these models.
   * [Contact](#contact)
 
 ## Installation
+**Requirements**
+- Python 3.7
+- [Human Body Prior](https://github.com/nghorbani/human_body_prior)
+- [Pyrender](https://pyrender.readthedocs.io/en/latest/install/index.html#osmesa) for visualizations
 
 Install from this repository for the latest developments:
 ```bash
