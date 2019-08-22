@@ -17,7 +17,7 @@
 #
 #
 # Code Developed by:
-# Nima Ghorbani <https://www.linkedin.com/in/nghorbani/>
+# Nima Ghorbani <https://nghorbani.github.io/>
 #
 # 2019.08.09
 
