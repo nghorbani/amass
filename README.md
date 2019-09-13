@@ -2,7 +2,7 @@
 
 ![alt text](github_data/datasets_preview.png "Samples of bodies in AMASS recovered from Motion Capture sequences")
 
-[AMASS](http://dfaust.is.tue.mpg.de/downloads) is a large database of human motion unifying different optical marker-based motion capture datasets by representing them within a common framework and parameterization. 
+[AMASS](http://amass.is.tue.mpg.de) is a large database of human motion unifying different optical marker-based motion capture datasets by representing them within a common framework and parameterization. 
  AMASS is readily useful for animation, visualization, and generating training data for deep learning.
 
 Here we provide tools and tutorials to use AMASS in your research projects. More specifically:
