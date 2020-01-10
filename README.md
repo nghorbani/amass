@@ -27,6 +27,8 @@ We show how to use the body data from AMASS to animate these models.
 
 Install from this repository for the latest developments:
 ```bash
+pip install git+https://github.com/nghorbani/configer
+pip install git+https://github.com/nghorbani/human_body_prior
 pip install git+https://github.com/nghorbani/amass
 ```
 
