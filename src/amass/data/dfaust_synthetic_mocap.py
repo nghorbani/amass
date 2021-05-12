@@ -22,7 +22,7 @@
 # 2019.08.09
 import torch
 
-from human_body_prior.tools.omni_tools import makepath, colors
+from human_body_prior.tools.omni_tools import makepath
 from human_body_prior.tools.omni_tools import copy2cpu as c2c
 
 import json
@@ -106,7 +106,7 @@ def registration2markers(registration_dir, out_marker_dir):
     genders = {'50002': 'male', '50004': 'female', '50007': 'male', '50009': 'male', '50020': 'female',
                '50021': 'female', '50022': 'female', '50025': 'female', '50026': 'male', '50027': 'male'}
 
-    with open('./ssm_all_marker_placements.json') as f:
+    with open('ssm_all_marker_placements.json') as f:
         all_marker_placements = json.load(f)
     all_mrks_keys = list(all_marker_placements.keys())
 

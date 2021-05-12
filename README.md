@@ -1,6 +1,6 @@
 # AMASS: Archive of Motion Capture as Surface Shapes
 
-![alt text](github_data/datasets_preview.png "Samples of bodies in AMASS recovered from Motion Capture sequences")
+![alt text](support_data/github_data/datasets_preview.png "Samples of bodies in AMASS recovered from Motion Capture sequences")
 
 [AMASS](http://amass.is.tue.mpg.de) is a large database of human motion unifying different optical marker-based motion capture datasets by representing them within a common framework and parameterization. 
  AMASS is readily useful for animation, visualization, and generating training data for deep learning.
@@ -22,14 +22,14 @@ We show how to use the body data from AMASS to animate these models.
 ## Installation
 **Requirements**
 - Python 3.7
+- [PyTorch 1.7.1](https://pytorch.org/get-started)
 - [Human Body Prior](https://github.com/nghorbani/human_body_prior)
 - [Pyrender](https://pyrender.readthedocs.io/en/latest/install/index.html#osmesa) for visualizations
 
-Install from this repository for the latest developments:
+Clone this repo and run the following from the root folder:
 ```bash
-pip install git+https://github.com/nghorbani/configer
-pip install git+https://github.com/nghorbani/human_body_prior
-pip install git+https://github.com/nghorbani/amass
+python install -r requirements.txt
+python setup.py develop
 ```
 
 ## Body Models

@@ -31,7 +31,7 @@ bm_path = '../body_models/smplh/male/model.npz' # obtain from http://mano.is.tue
 comp_device = torch.device('cuda')
 bm = BodyModel(bm_path=bm_path, batch_size=1, num_betas=10).to(comp_device)
 
-npz_data_path = '../github_data/amass_sample.npz'
+npz_data_path = '../../../support_data/github_data/amass_sample.npz'
 bdata = np.load(npz_data_path)
 print(list(bdata.keys()))
 

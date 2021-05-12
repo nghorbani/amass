@@ -25,22 +25,20 @@
 from setuptools import setup, find_packages
 
 setup(name='amass',
-      version='0.1.0',
-      packages=find_packages(),
+      version='1.0.1',
+      packages=find_packages('src'),
+      package_dir={'': 'src'},
       include_package_data=True,
       author='Nima Ghorbani',
-      author_email='nima.gbani@gmail.com',
+      author_email='nghorbani@tuebingen.mpg.de',
       maintainer='Nima Ghorbani',
-      maintainer_email='nima.gbani@gmail.com',
-      url='https://github.com/nghorbani/amass',
+      maintainer_email='nghorbani@tuebingen.mpg.de',
+      url='https://nghorbani.github.io',
       description='AMASS: Archive of Motion Capture as Surface Shapes',
       long_description=open("README.md").read(),
       long_description_content_type="text/markdown",
-      install_requires=['torch==1.1.0', 'human_body_prior',  'trimesh', 'pyrender', 'numpy'],
-      dependency_links=[
-          "https://github.com/nghorbani/configer/tarball/master#egg=configer"
-          "https://github.com/nghorbani/human_body_prior/tarball/master#egg=human_body_prior"
-      ],
+      install_requires=[],
+      dependency_links=[],
       classifiers=[
           "Intended Audience :: Developers",
           "Intended Audience :: Researchers",
