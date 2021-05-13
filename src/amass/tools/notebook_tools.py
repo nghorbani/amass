@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 #
-# Copyright (C) 2019 Max-Planck-Gesellschaft zur Förderung der Wissenschaften e.V. (MPG),
+# Copyright (C) 2021 Max-Planck-Gesellschaft zur Förderung der Wissenschaften e.V. (MPG),
 # acting on behalf of its Max Planck Institute for Intelligent Systems and the
 # Max Planck Institute for Biological Cybernetics. All rights reserved.
 #

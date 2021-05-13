@@ -7,7 +7,7 @@
 
 Here we provide tools and tutorials to use AMASS in your research projects. More specifically:
 - Following the recommended splits of data by AMASS, we provide three non-overlapping train/validation/test splits.
-- AMASS uses an extended version of [SMPL+H](http://mano.is.tue.mpg.de/) with [DMPLs](http://smpl.is.tue.mpg.de/downloads). 
+- AMASS uses an extended version of [SMPL+H](http://mano.is.tue.mpg.de/) with [DMPLs](https://smpl.is.tue.mpg.de/). 
 Here we show how to load different components and visualize a body model with AMASS data.
 - AMASS is also compatible with [SMPL](http://smpl.is.tue.mpg.de) and [SMPL-X](https://smpl-x.is.tue.mpg.de/) body models. 
 We show how to use the body data from AMASS to animate these models.
@@ -33,13 +33,13 @@ python setup.py develop
 ```
 
 ## Body Models
-AMASS fits a statistical body model to labeled marker-based optical motion capture data.
-In the paper originally we use [SMPL+H](http://mano.is.tue.mpg.de/downloads) with extended shape space, e.g. 16 betas, and 
-[DMPLs](http://smpl.is.tue.mpg.de/downloads). 
-Please download each and put them in body_models folder of this repository after you obtained the code from GitHub.
+AMASS uses [MoSh++](https://amass.is.tue.mpg.de) pipeline to fit [SMPL+H body model](https://mano.is.tue.mpg.de/)
+to human optical marker based motion capture (mocap) data.
+In the paper we use SMPL+H with extended shape space, i.e. 16 betas, and 8 [DMPLs](https://smpl.is.tue.mpg.de/). 
+Please download models and place them them in body_models folder of this repository after you obtained the code from GitHub.
 
 ## Tutorials
-We release tools and multiple Jupyter notebooks to demonstrate how to use AMASS to animate SMPLH body model.
+We release tools and Jupyter notebooks to demonstrate how to use AMASS to animate SMPL+H body model.
 
 Furthermore, as promised in the supplementary material of the paper, we release code to produce synthetic mocap using 
 [DFaust](http://dfaust.is.tue.mpg.de) registrations.
@@ -76,4 +76,13 @@ The code in this repository is developed by [Nima Ghorbani](https://nghorbani.gi
 
 If you have any questions you can contact us at [amass@tuebingen.mpg.de](mailto:amass@tuebingen.mpg.de).
 
-For commercial licensing, contact [ps-licensing@tue.mpg.de](mailto:ps-licensing@tue.mpg.de)
+For commercial licensing, please contact [ps-licensing@tue.mpg.de](mailto:ps-licensing@tue.mpg.de)
+
+To find out about the latest developments stay tuned to [AMASS twitter](https://twitter.com/mocap_amass).
+
+## Contribute to AMASS
+The research community needs more human motion data. 
+If you have interesting marker based motion capture data, and you are willing to share it for research purposes, 
+then we will label and clean your mocap and MoSh it for you and add it to the AMASS dataset, 
+naturally citing you as the original owner of the marker data.
+For this purposes feel free to contact [amass@tuebingen.mpg.de](mailto:amass@tuebingen.mpg.de).

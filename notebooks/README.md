@@ -1,4 +1,4 @@
-![alt text](https://amass.is.tue.mpg.de/uploads/ckeditor/pictures/1/teaser.gif "Columns left-to-right 
+![alt text](../support_data/github_data/teaser.gif)"Columns left-to-right 
 [Raw Mocap, Reconstructed Body, Rec. Body with Joints], Each row shouw the same data in different angle.")
 
 We provide several jupyter notebooks to demonstrate how to use AMASS. 
@@ -14,9 +14,9 @@ You first need to obtain 4D-scan registrations from [DFaust website](http://dfau
 The code will dump markers at you desired location.
 
 ```python
-from src.amass import registration2markers
+from amass.data.dfaust_synthetic_mocap import registration2markers
 
-registration_dir = 'PATH_TO_DFAUT/REGISTRATION_PKLS'  # download from http://dfaust.is.tue.mpg.de/downloads
+registration_dir = 'PATH_TO_DFAUT/REGISTRATION_PKLS'  # download from http://dfaust.is.tue.mpg.de
 out_marker_dir = 'OUTPUT_FOR_SYNTHETIC_MOCAP/*.npz'
 registration2markers(registration_dir, out_marker_dir)
 
