@@ -24,7 +24,7 @@
 import os
 import numpy as np
 from human_body_prior.tools.omni_tools import makepath, log2file
-from human_body_prior.tools.omni_tools import euler2em, em2euler
+from human_body_prior.tools.rotation_tools import euler2em, em2euler, aa2matrot
 from human_body_prior.tools.omni_tools import copy2cpu as c2c
 
 import shutil, sys
@@ -133,8 +133,7 @@ class AMASS_Augment(Dataset):
         '''
         sample = {k: self.ds[k][idx] for k in self.ds.keys()}
 
-        from human_body_prior.train.vposer_smpl import VPoser
-        sample['pose_matrot'] = VPoser.aa2matrot(sample['pose'].view([1,1,-1,3])).view(1,-1)
+        sample['pose_matrot'] = aa2matrot(sample['pose'].view([-1,3])).view(1,-1)
 
         return sample
 
