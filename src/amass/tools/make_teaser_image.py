@@ -45,13 +45,13 @@ print('The subject of the mocap sequence is  {}.'.format(subject_gender))
 
 from human_body_prior.body_model.body_model import BodyModel
 
-bm_path = osp.join(support_dir, 'body_models/smplh/{}/model.npz'.format(subject_gender))
+bm_fname = osp.join(support_dir, 'body_models/smplh/{}/model.npz'.format(subject_gender))
 dmpl_path = osp.join(support_dir, 'body_models/dmpls/{}/model.npz'.format(subject_gender))
 
 num_betas = 16 # number of body parameters
 num_dmpls = 8 # number of DMPL parameters
 
-bm = BodyModel(bm_path=bm_path, num_betas=num_betas, num_dmpls=num_dmpls, path_dmpl=dmpl_path).to(comp_device)
+bm = BodyModel(bm_fname=bm_fname, num_betas=num_betas, num_dmpls=num_dmpls, dmpl_fname=dmpl_path).to(comp_device)
 faces = c2c(bm.f)
 
 time_length = len(bdata['trans'])
