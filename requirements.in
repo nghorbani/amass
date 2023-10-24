@@ -1,0 +1,17 @@
+git+https://github.com/nghorbani/body_visualizer
+git+https://github.com/MPI-IS/configer.git
+git+https://github.com/MPI-IS/mesh.git
+git+https://github.com/nghorbani/human_body_prior
+
+tqdm
+numpy==1.23.1
+dotmap
+pytorch-lightning
+PyYAML
+torch
+transforms3d
+trimesh
+pyrender
+jupyterlab
+ipywidgets
+matplotlib
