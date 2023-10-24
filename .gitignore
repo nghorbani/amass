@@ -131,3 +131,5 @@ support_data/body_models/smplx/
 
 support_data/body_models/model_compress\.py
 notebooks/dmpl_sample.gif
+
+support_data/body_models
