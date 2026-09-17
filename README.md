@@ -1,5 +1,15 @@
 # AMASS: Archive of Motion Capture as Surface Shapes
 
+## Status (2026-09-17)
+
+This repository holds the tutorials and helper code released with the AMASS paper (ICCV 2019); it is
+not under active development. On 2026-09-17 the dependencies were pinned so the notebooks match the
+installed `human_body_prior`: the notebooks' BodyModel calls (bm_fname, num_betas, num_dmpls, dmpl_fname) match the installed code and were exercised with a synthetic body model in tests/test_tutorial_calls.py, and each notebook's setup cells run in tests/test_notebook_prefixes.py; the tutorials were not run end to end with the licence-gated SMPL+H and SMPL-X models and AMASS data.
+
+The data lives at https://amass.is.tue.mpg.de/. Questions about the dataset itself (contents,
+frame rates, ground planes, coordinate conventions, missing subjects, download access) go to the
+contact on that website, not to this repository.
+
 ![alt text](support_data/github_data/datasets_preview.png "Samples of bodies in AMASS recovered from Motion Capture sequences")
 
 [AMASS](http://amass.is.tue.mpg.de) is a large database of human motion unifying different optical marker-based motion capture datasets by representing them within a common framework and parameterization. 
@@ -21,16 +31,16 @@ We show how to use the body data from AMASS to animate these models.
 
 ## Installation
 **Requirements**
-- Python 3.7
-- [PyTorch 1.7.1](https://pytorch.org/get-started)
-- [Human Body Prior](https://github.com/nghorbani/human_body_prior)
-- [Pyrender](https://pyrender.readthedocs.io/en/latest/install/index.html#osmesa) for visualizations
+- Python 3.11 or 3.12
+- [Human Body Prior](https://github.com/nghorbani/human_body_prior), pinned by commit in `requirements.txt` and `setup.py`; it brings PyTorch
+- [body_visualizer](https://github.com/nghorbani/body_visualizer) and [Pyrender](https://pyrender.readthedocs.io/en/latest/install/index.html#osmesa) for the visualisations in the notebooks
 
 Clone this repo and run the following from the root folder:
 ```bash
 pip install -r requirements.txt
-python setup.py develop
+pip install -e .
 ```
+Run the tests with `pip install pytest` and `pytest tests`.
 
 ## Body Models
 AMASS uses [MoSh++](https://amass.is.tue.mpg.de) pipeline to fit [SMPL+H body model](https://mano.is.tue.mpg.de/)
